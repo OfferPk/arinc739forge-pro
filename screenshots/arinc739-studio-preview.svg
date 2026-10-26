@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="studioBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#070a10"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#studioBg)"/>
+
+  <!-- Window Header -->
+  <rect width="1000" height="50" fill="#111827" stroke="#1f293d" stroke-width="1"/>
+  <circle cx="25" cy="25" r="6" fill="#f43f5e"/>
+  <circle cx="45" cy="25" r="6" fill="#f59e0b"/>
+  <circle cx="65" cy="25" r="6" fill="#10b981"/>
+  <text x="100" y="31" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">
+    ARINC739Forge Pro — Multi-Purpose Control &amp; Display Unit Studio (v1.0.0)
+  </text>
+  <rect x="740" y="14" width="235" height="24" rx="4" fill="rgba(16,185,129,0.15)" stroke="#10b981"/>
+  <text x="857" y="30" text-anchor="middle" font-family="monospace" font-size="11" font-weight="bold" fill="#10b981">
+    ARINC 739A MCDU CERTIFIED
+  </text>
+
+  <!-- Left: MCDU Hardware Simulator -->
+  <rect x="20" y="70" width="460" height="505" rx="12" fill="#1e2530" stroke="#334155" stroke-width="2"/>
+  <text x="40" y="98" font-family="sans-serif" font-size="11" font-weight="bold" fill="#94a3b8">MCDU 1 (CAPT CONSOLE)</text>
+
+  <!-- Screen Box -->
+  <rect x="65" y="115" width="370" height="230" rx="6" fill="#020704" stroke="#0f172a" stroke-width="2"/>
+  <!-- Lines on screen -->
+  <text x="80" y="140" font-family="monospace" font-size="12" fill="#ffffff">ACT RTE 1 LEGS     1/2</text>
+  <text x="80" y="160" font-family="monospace" font-size="10" fill="#00e5ff"> 250KT/10000       DES</text>
+  <text x="80" y="180" font-family="monospace" font-size="12" fill="#e040fb">&lt;DESIS           25 NM</text>
+  <text x="80" y="200" font-family="monospace" font-size="10" fill="#00e5ff"> 240KT/FL150       CRZ</text>
+  <text x="80" y="220" font-family="monospace" font-size="12" fill="#ffffff">&lt;TOSNA           48 NM</text>
+  <text x="80" y="240" font-family="monospace" font-size="10" fill="#00e5ff"> .82M /FL350       CRZ</text>
+  <text x="80" y="260" font-family="monospace" font-size="12" fill="#ffffff">&lt;KABAN          120 NM</text>
+  <text x="80" y="315" font-family="monospace" font-size="12" fill="#00e5ff">&lt;RTE 2 LEGS    LEG DATA&gt;</text>
+  <text x="80" y="335" font-family="monospace" font-size="12" fill="#ffffff">OMDB/RW12L</text>
+
+  <!-- LSKs -->
+  <rect x="35" y="130" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="35" y="170" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="35" y="210" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="35" y="250" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="35" y="290" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+
+  <rect x="443" y="130" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="443" y="170" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="443" y="210" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="443" y="250" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+  <rect x="443" y="290" width="22" height="16" rx="2" fill="#0f172a" stroke="#475569"/>
+
+  <!-- Keypad Preview -->
+  <rect x="35" y="365" width="430" height="190" rx="4" fill="#0d1527" stroke="#334155"/>
+  <text x="250" y="465" text-anchor="middle" font-family="monospace" font-size="12" fill="#64748b">[TACTILE ALPHANUMERIC &amp; FUNCTION KEYPAD]</text>
+
+  <!-- Right: Telemetry & Auditor -->
+  <rect x="510" y="70" width="470" height="235" rx="6" fill="#111827" stroke="#1f293d"/>
+  <text x="525" y="98" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">ARINC 429 BUS WORDS (LABEL 172 &amp; 173)</text>
+  <rect x="525" y="115" width="440" height="170" rx="4" fill="#090e18" stroke="#1e293b"/>
+  <text x="540" y="140" font-family="monospace" font-size="11" fill="#38bdf8">173 LINE 1 / W1: 'ACT ' -&gt; 0xE18605DE (ODD PARITY)</text>
+  <text x="540" y="170" font-family="monospace" font-size="11" fill="#38bdf8">173 LINE 1 / W2: 'RTE ' -&gt; 0xE18A05DE (ODD PARITY)</text>
+  <text x="540" y="200" font-family="monospace" font-size="11" fill="#10b981">173 LINE 1 / W3: '1 LE' -&gt; 0xE19205DE (ODD PARITY)</text>
+  <text x="540" y="230" font-family="monospace" font-size="11" fill="#10b981">173 LINE 1 / W4: 'GS  ' -&gt; 0xE19605DE (ODD PARITY)</text>
+  <text x="540" y="260" font-family="monospace" font-size="11" fill="#a855f7">172 LSK EVENT  : KEY 0x01 -&gt; 0x6000055E (ODD PARITY)</text>
+
+  <rect x="510" y="325" width="470" height="250" rx="6" fill="#111827" stroke="#1f293d"/>
+  <text x="525" y="352" font-family="sans-serif" font-size="13" font-weight="bold" fill="#94a3b8">10-POINT NORMATIVE AUDIT SCORECARD</text>
+
+  <g transform="translate(525, 370)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">1. ARINC 429 Parity</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(745, 370)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">2. 14x24 Dimensions</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(525, 410)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">3. Line 4 Chars/Word</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(745, 410)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">4. Dual-Font Support</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(525, 450)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">5. 6-Color Palette</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(745, 450)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">6. LSK Key Addressing</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(525, 490)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">7. System Arbitration</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(745, 490)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">8. Scratchpad Isolation</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(525, 530)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">9. SSM Normal Mode</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+  <g transform="translate(745, 530)">
+    <rect width="210" height="28" rx="4" fill="#090e18"/>
+    <text x="10" y="18" font-family="sans-serif" font-size="10" fill="#cbd5e1">10. Cockpit Interop</text>
+    <text x="180" y="18" font-family="monospace" font-size="10" font-weight="bold" fill="#10b981">PASS</text>
+  </g>
+</svg>
